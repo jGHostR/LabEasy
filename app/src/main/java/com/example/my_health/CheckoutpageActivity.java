@@ -39,7 +39,7 @@ public class CheckoutpageActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Please fill the complete information", Toast.LENGTH_SHORT).show();
                 } else {
                     sendSMS(c_email,"Hi " + c_name + ", Your OTP is " + OTP);
-                    Toast.makeText(getApplicationContext(), "Check yor email for OTP", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "OTP Sent through SMS", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(CheckoutpageActivity.this, confirm.class);
                     intent.putExtra("otp",OTP);
                     intent.putExtra("c_email",c_email);

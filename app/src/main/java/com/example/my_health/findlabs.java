@@ -150,7 +150,7 @@ public class findlabs extends AppCompatActivity {
         List<String> hospitals = new ArrayList<>();
         try {
             // Replace "YOUR_API_KEY" with your actual API key
-            String apiKey = "AIzaSyCxA-TPOfKf2amGVo5J6nlYRLJrGJNxxxY";
+            String apiKey = "YOUR_API_KEY";
             String urlString = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" +
                     location.getLatitude() + "," + location.getLongitude() +
                     "&radius=5000&type=hospital&key=" + apiKey;

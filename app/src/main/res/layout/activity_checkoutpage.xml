@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".CheckoutpageActivity">
+
+    <EditText
+        android:id="@+id/cardNumber"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_bg"
+        android:textColor="@color/white"
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="CARD NUMBER"
+        android:textColorHint="#BC0716"
+        app:layout_constraintBottom_toTopOf="@+id/card_Cvv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_Name" />
+
+    <EditText
+        android:id="@+id/card_Name"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_bg"
+        android:textColor="#BC0716"
+
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="NAME ON CARD"
+        android:textColorHint="#BC0716"
+        app:layout_constraintBottom_toTopOf="@+id/cardNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_Email" />
+
+    <EditText
+        android:id="@+id/card_Cvv2"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_bg"
+        android:textColor="#BC0716"
+
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="ENTER CVV2"
+        android:inputType="textPassword"
+        android:textColorHint="#BC0716"
+        app:layout_constraintBottom_toTopOf="@+id/checkout_payment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECKOUT"
+        android:textColor="#BC0716"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/card_Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/card_Email"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_bg"
+        android:textColor="#BC0716"
+
+        android:drawablePadding="10sp"
+        android:ems="10"
+        android:hint="EMAIL ADDRESS"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20sp"
+        android:paddingTop="10sp"
+        android:paddingRight="10sp"
+        android:textColorHint="#BC0716"
+        app:layout_constraintBottom_toTopOf="@+id/card_Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/checkout_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_bg"
+        android:text="CONFIRM"
+        app:backgroundTint="#BC0716"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_Cvv2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAB EASY"
+        android:textColor="#BC0716"
+        android:textSize="55sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
